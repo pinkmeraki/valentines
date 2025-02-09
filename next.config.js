@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",  // Enables static export
-  images: { unoptimized: true },  // Fixes images for GitHub Pages
-  basePath: "/valentines",  // Change to match your repo name
+  output: "export",  // Forces static export
+  images: { unoptimized: true },  // Fixes image issues for GitHub Pages
+  basePath: "/valentines",  // Change to match your GitHub repo name
   assetPrefix: "/valentines"
 };
 
