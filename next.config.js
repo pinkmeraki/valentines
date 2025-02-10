@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",  // Forces static export
-  images: { unoptimized: true },  // Fixes image issues for GitHub Pages
-  basePath: "/valentines",  // Ensure this matches your GitHub repo name
-  assetPrefix: "/valentines",
-  trailingSlash: true  // Fixes GitHub Pages routing issues
+  output: "export", // Ensures Next.js generates static files
+  images: { unoptimized: true }, // Fixes image loading issues
+  basePath: "/valentines", // Tells Next.js to serve files from /valentines/
+  assetPrefix: "/valentines", // Ensures assets (CSS, JS) load correctly
+  trailingSlash: true, // Fixes GitHub Pages path issues
 };
 
 module.exports = nextConfig;
+
